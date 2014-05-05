@@ -1,12 +1,5 @@
-/*
-  Welcome to Compass.
-  In this file you should write your main styles. (or centralize your imports)
-  Import this file using the following HTML or equivalent:
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "normalize"
-@import "compass/css3"
-@import "compass/utilities/general/clearfix"
+@import "bourbon/bourbon"
 
 body, html
 	padding: 0
@@ -171,7 +164,7 @@ header
 
 				img
 					position: absolute
-					+transform-origin(top, right)
+					+transform-origin(top right)
 					top: 80px
 					left: -120px
 
@@ -326,7 +319,7 @@ body>section
 			.group
 				float: left
 				width: 1615px
-				+pie-clearfix
+				+clearfix
 
 				a, div
 					text-align: left
@@ -362,7 +355,7 @@ body>section
 
 	.info
 		display: inline-block
-		+legacy-pie-clearfix
+		+clearfix
 
 	.col
 		// width: 400px
