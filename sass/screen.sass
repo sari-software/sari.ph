@@ -1,0 +1,423 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "normalize"
+@import "compass/css3"
+@import "compass/utilities/general/clearfix"
+
+body, html
+	padding: 0
+	margin: 0
+	font-family: "proxima-nova", "Proxima Nova", sans-serif
+
+*
+	box-sizing: border-box
+
+.container
+	width: 960px
+	margin: 0 auto
+
+nav.top
+	width: 100%
+	height: 40px
+	padding: 14px
+	margin: 0
+	font-size: 14px
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2)
+	position: fixed
+	top: 0
+	background: rgba(255,255,255,0.95)
+	z-index: 200
+	overflow-y: hidden
+
+	a
+		display: inline-block
+		text-decoration: none
+		color: #222
+		text-shadow: 0 2px 2px #fff
+		line-height: 14px
+		+transition( all 0.2s )
+		&:hover
+			color: #000
+			+transform( scale(1.15) )
+			// text-shadow: 0 1px 1px rgba(0,0,0,0.2)
+
+	ul
+		float: left
+		list-style-type: none
+		margin: -2px 0 0 0
+		padding: 0
+		margin-left: 10px
+
+		li
+			margin: 0
+			display: inline
+
+		li:nth-child(1)
+			font-size: 11px
+			font-weight: bold
+
+		li.active a
+			padding-bottom: 6px
+
+		a
+			margin-right: 20px
+			padding-bottom: 14px
+			border-bottom: 8px solid #555
+
+
+	div
+		float: right
+		margin-right: 10px
+		width: 300px
+		text-align: right
+
+		a
+			margin-left: 20px
+
+header
+	height: 560px
+	background: #ffffe7 url("../img/head-bg.png") no-repeat center top
+
+	.container
+		position: relative
+		padding: 1px
+
+	img#logo
+		width: 144px
+		height: 304px
+		float: left
+		box-sizing: content-box
+		padding: 110px 30px 0 140px
+
+	.tm
+		display: block
+		position: absolute
+		top: 400px
+		left: 280px
+		font-weight: bold
+		font-size: 27px
+		color: #FABA7A
+
+
+	.welcome
+		font-weight: bold
+		font-size: 24px
+		line-height: 28px
+		text-transform: uppercase
+		color: #F58812
+		padding: 1px
+		margin: 150px 0 0 0
+
+		p
+			margin: 0
+
+		h1
+			margin: 0 0 0 0
+			font-size: 96px
+			line-height: 100px
+			position: relative
+
+			span
+				display: inline-block
+				position: absolute
+				top: 0px
+				font-weight: 300
+				font-style: italic
+				text-transform: lowercase
+				font-size: 48px
+				line-height: 48px
+				padding-left: 5px
+
+
+				&:nth-child(2)
+					top: 38px
+					padding-left: 38px
+
+		div
+			display: inline-block
+			position: relative
+			cursor: pointer
+
+			aside
+				position: absolute
+				top: -75px
+				left: 240px
+				+transition(all 0.4s)
+
+				opacity: 0
+
+				*
+					+transition(all 0.4s)
+
+				span
+					text-transform: none
+					display: inline-block
+					border-radius: 8px
+					padding: 13px
+					width: 340px
+					height: 350px
+					background: #eee url("../img/linedpaper.png")
+					box-shadow: 0 1px 5px rgba(0,0,0,0.6)
+
+					font-size: 16px
+					line-height: 22px
+					font-family: "Coming Soon", sans-serif
+					color: rgba(38,38,71,0.8)
+
+					+transform( translateY(400px) rotate(30deg) )
+
+
+			&:hover aside
+				opacity: 1
+
+				span
+					+transform( translateY(0px) rotate(-6deg) )
+
+
+
+
+body>section
+	text-align: center
+	font-size: 28px
+	line-height: 32px
+	position: relative
+	padding-top: 1px
+	padding-bottom: 100px
+	color: #fff
+
+	p
+		max-width: 800px
+		display: inline-block
+
+	h2
+		font-size: 44px
+		margin-top: 45px
+		margin-bottom: 0
+
+.what
+	background: #0071BC
+
+	// -webkit-font-smoothing: antialiased
+
+	.top
+		width: 100%
+		height: 95px
+		position: absolute
+		top: -90px
+		overflow-x: hidden
+
+		div
+			width: 2920px
+			height: 93px
+			background: url("../img/sari2a.svg") repeat-x bottom
+			+animation( slide-stores 18s linear infinite )
+
+
+	#what-1
+		width: 670px
+		margin: 10px 0 0 0
+
+	p.col
+		font-size: 18px
+		line-height: 24px
+		width: 210px
+		margin: 18px
+		text-align: left
+
+
+
+.who
+	background: #F58812
+
+	figure.people
+		width:  100%
+		height: 100px
+
+		border:
+			top:    1px solid rgba(255,255,255,0.6)
+			bottom: 1px solid rgba(255,255,255,0.6)
+
+		margin: 20px 0 10px 0
+
+		background: rgba(255,255,255,0.3)
+		overflow-x: hidden
+
+		position: relative
+
+		div.slider
+			width: 4100px
+			height: 44px
+			+transition( all 1s )
+
+			position: absolute
+
+			top: 50%
+			left: 0
+			margin-top: -22px
+
+			+animation( slide-peeps 45s linear infinite )
+
+			.group
+				float: left
+				+pie-clearfix
+
+				a, div
+					text-align: left
+					display: block
+					float: left
+					line-height: 1
+					text-decoration: none
+					background: rgba(255,255,255,0.8)
+					color: #222
+					font-size: 16px
+					padding: 6px 16px
+					border-radius: 24px
+					margin: 0px 8px
+					+transition( all 0.25s )
+
+					span
+						color: #555
+						opacity: 0.8
+						font-size: 12px
+						font-weight: bold
+						text-transform: uppercase
+
+			a:hover
+				+transform( translateY(-4px) )
+				box-shadow: 0 5px 20px rgba(0,0,0,0.4)
+
+		&:hover
+			div
+				+animation-play-state( paused )
+
+.contact
+	background: #515050
+
+	.info
+		display: inline-block
+		+legacy-pie-clearfix
+
+	.col
+		// width: 400px
+		height: 200px
+		margin: 1px 20px
+		float: left
+		text-align: left
+
+		// background: #515050
+		// box-shadow: inset 0 0 50px rgba(0,0,0,0.4)
+
+		&.one
+			margin-left: auto
+			width: 270px
+
+		&.two
+			margin-right: auto
+			width: 570px
+
+			font-size: 17px
+			line-height: 20px
+
+			p
+				margin: 0 0 1em 0
+				text-align: left
+
+				span
+					display: inline-block
+					width: 60px
+
+			a
+				color: #fff
+				text-decoration: none
+				text-shadow: 0 1px 2px rgba(0,0,0,0.6)
+				+transition(all 0.3s)
+
+				padding: 4px 10px
+				border-radius: 10px
+				position: relative
+				left: -5px
+
+				&:hover
+					background: rgba(255,255,255,0.3)
+					text-shadow: 0 2px 2px rgba(0,0,0,1)
+
+
+
+				// text-transform: uppercase
+				// border-bottom: 1px dotted #fff
+
+
+		h4
+			margin: 0 0 14px 0
+			font-size: 18px
+			text-transform: uppercase
+			letter-spacing: 2px
+			color: #111
+			text-shadow: 0 1px 1px rgba(255,255,255,0.4)
+			line-height: 30px
+
+	.email
+		display: inline-block
+		font-size: 48px
+		color: #eee
+		text-shadow: 0 1px 2px rgba(0,0,0,0.6)
+		text-decoration: none
+		padding: 14px
+		margin-top: 10px
+		border-radius: 10px
+		position: relative
+		left: -14px
+		+transition(all 0.4s)
+
+		&:hover
+			background: rgba(255,255,255,0.3)
+			color: #fff
+			text-shadow: 0 2px 2px rgba(0,0,0,0.5)
+
+	iframe
+		float: right
+
+footer
+	text-align: center
+	color: #000
+	text-shadow: 0 1px 1px #444
+	background: #333
+	width: 100%
+	padding: 25px 0 50px 0
+
+	img
+		max-height: 140px
+		margin: 0 30px
+
+	h3
+		color: #646464
+		margin: 0
+		padding: 10px 0 30px 0
+		font-size: 36px
+		// text-transform: uppercase
+		text-shadow: 0 2px 1px rgba(0,0,0,0.3)
+		// letter-spacing: 1px
+
+	.copyright
+		margin: 30px 0 20px 0
+
+
++keyframes(slide-stores)
+	from
+		+transform( translateX(0px) )
+	to
+		+transform( translateX(-584px) )
+
++keyframes(slide-peeps)
+	from
+		+transform( translateX(-1602px) )
+	to
+		+transform( translateX(0px) )
+
+
+
+
