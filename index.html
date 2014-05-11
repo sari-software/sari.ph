@@ -33,7 +33,7 @@
 			<ul class="sections">
 				<li><a href="#top">Sari</a></li>
 				<li><a href="#what">what we’re doing</a></li>
-				<li><a href="#launchrock">try beta</a></li>
+				<li><a id="launchrocknavbar" href="#launchrock">try beta</a></li>
 				<li><a href="#who">who we are</a></li>
 				<li><a href="#contact">get in touch</a></li>
 				<li><a href="#footer">partners</a></li>
@@ -74,9 +74,8 @@
 
 							</aside>
 						</div> <br> through
-						technology.<br>
+						technology.<br><a id="calltoaction" href="#launchrock"><b>Support our Nanays!</b></a>
 					</div>
-					<div id="calltoaction"><h2>Support our Nanays!</h2></div>
 				</div>
 
 			</div>
@@ -131,7 +130,7 @@
 					We are making 100 phones available for a closed beta this May - all you have to do is buy the phone kit, use the app, and send us feedback!<br><br>
 					</p>
 
-					<div id="launchrocklink"><a href="http://sariload-beta.sari.ph">Sari Load Beta</a></div>
+					<a id="launchrockid" href="http://sariload-beta.sari.ph">Sari Load Beta</a>
 
 			</article>
 				
@@ -389,7 +388,12 @@
 				scrollOffset: -80
 			});
 
+			$('#calltoaction').click(function(){
+				$("#launchrocknavbar").click();
+			});
+
 		});
+
 
 
 	</script>
