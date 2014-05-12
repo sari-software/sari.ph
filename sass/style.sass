@@ -385,8 +385,49 @@ body>section
 		margin-top: 20px
 		line-height: 25px
 
-		li span
-			font-weight: 100
+		li
+			+perspective(200)
+			span
+				font-weight: 100
+			em
+				display: inline-block
+				+transform-origin(bottom)
+				+transform(translateY(-25px) rotateX(91deg))
+
+				background: rgba(0,0,0,0.5)
+
+				color: rgba(255,255,255,0)
+
+				font-style: normal
+				position: relative
+				+backface-visibility(hidden)
+				+transition(all 0.4s)
+				+transform-style(preserve-3d)
+
+				&:after
+					+transition(all 0.4s)
+					display: block
+					content: "SARI"
+					position: absolute
+					left: 0
+					top: 22px
+					border-bottom: 1px dotted white
+					background: rgba(0,0,0,0)
+					color: rgba(255,255,255,1)
+					+backface-visibility(hidden)
+					+transform-origin(top)
+					+transform(rotateX(-91deg))
+
+			&:hover
+				em
+					+transform( )
+					background: rgba(0,0,0,0)
+					color: rgba(255,255,255,1)
+
+					&:after
+						background: rgba(0,0,0,0.5)
+						color: rgba(255,255,255,0)
+						border-bottom: 0
 
 	.col
 		// width: 400px
