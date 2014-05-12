@@ -33,7 +33,7 @@
 			<ul class="sections">
 				<li><a href="#top">Sari</a></li>
 				<li><a href="#what">what we’re doing</a></li>
-				<li><a id="launchrocknavbar" href="#launchrock">our apps</a></li>
+				<li><a href="#apps">our apps</a></li>
 				<li><a href="#who">who we are</a></li>
 				<li><a href="#contact">get in touch</a></li>
 				<li><a href="#footer">partners</a></li>
@@ -74,7 +74,7 @@
 
 							</aside>
 						</div> <br> through
-						technology.<br><a id="calltoaction" href="#launchrock">Try our beta!</a>
+						technology.<br><a id="beta-call" href="#apps">Try our beta!</a>
 					</div>
 				</div>
 
@@ -119,8 +119,8 @@
 
 		</section>
 
-		<section class="launchrock section" id="launchrock">
-		
+		<section class="apps section" id="apps">
+
 			<article class="container">
 
 				<h2>“Where are your apps?”</h2>
@@ -132,7 +132,7 @@
 					We are making 100 phones available for a closed beta this May - all you have to do is buy the phone kit, use the app, and send us feedback!<br><br>
 					</p>
 
-					<a id="launchrockid" href="http://sariload-beta.sari.ph">Sari Load Beta</a>
+					<a id="beta-link" href="http://sariload-beta.sari.ph">Sari Load Beta</a>
 
 			</article>
 				
@@ -395,8 +395,8 @@
 				scrollOffset: -80
 			});
 
-			$('#calltoaction').click(function(){
-				$("#launchrocknavbar").click();
+			$('#beta-call').click(function(){
+				$("li a[href='#apps'").click();
 			});
 
 		});
