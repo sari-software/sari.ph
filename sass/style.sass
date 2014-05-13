@@ -227,6 +227,7 @@ header
 		position: absolute
 		bottom: -10px
 		overflow-x: hidden
+		margin: 0
 
 		div
 			position: absolute
@@ -306,7 +307,7 @@ body>section
 
 	a#beta-link
 		display: block
-		background: white
+		background: #fff
 		width: 400px
 		height: 60px
 		padding: 13px
@@ -319,6 +320,16 @@ body>section
 		+transition( all 0.2s )
 		&:hover
 			+transform( scale(1.15) )
+
+	p.col
+		vertical-align: top
+		font-size: 18px
+		line-height: 24px
+		width: 240px
+		padding: 1px
+		height: 200px
+		margin: 18px
+		text-align: left
 
 .who
 	background: #F58812
@@ -424,7 +435,7 @@ body>section
 					position: absolute
 					left: 0
 					top: 22px
-					border-bottom: 1px dotted white
+					border-bottom: 1px solid #999
 					background: rgba(0,0,0,0)
 					color: rgba(255,255,255,1)
 					+backface-visibility(hidden)
@@ -581,7 +592,7 @@ body>section
 
 	&:hover
 		.badass
-			color: white
+			color: #fff
 			text-shadow: 1px 1px 0px #777, 2px 2px 0px #666, 3px 3px 0px #555, 4px 4px 0px #444, 5px 5px 7px #000
 			+transform( translateX(-2px) translateY(-2px) )
 
