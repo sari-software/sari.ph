@@ -441,22 +441,6 @@ header {
   header .container {
     position: relative;
     padding: 1px; }
-  header a#beta-call {
-    position: absolute;
-    top: 90px;
-    right: -110px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background: #B6485D;
-    color: #fff;
-    text-shadow: 0 -1px 0 #810d23;
-    padding: 10px 120px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 100; }
   header img#logo {
     width: 183px;
     height: 311px;
@@ -637,39 +621,6 @@ body > section {
     font-size: 18px;
     line-height: 24px;
     width: 210px;
-    padding: 1px;
-    height: 200px;
-    margin: 18px;
-    text-align: left; }
-
-.apps {
-  background: #B6485D; }
-  .apps a#beta-link {
-    display: block;
-    background: #fff;
-    width: 400px;
-    height: 60px;
-    padding: 13px;
-    text-decoration: none;
-    color: #B6485D;
-    font-weight: bold;
-    font-family: "jubilat";
-    margin: auto;
-    border-radius: 24px;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s; }
-    .apps a#beta-link:hover {
-      -webkit-transform: scale(1.15);
-      -moz-transform: scale(1.15);
-      -ms-transform: scale(1.15);
-      -o-transform: scale(1.15);
-      transform: scale(1.15); }
-  .apps p.col {
-    vertical-align: top;
-    font-size: 18px;
-    line-height: 24px;
-    width: 240px;
     padding: 1px;
     height: 200px;
     margin: 18px;
